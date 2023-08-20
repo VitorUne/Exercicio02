@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 02 - Clone de Formulario</title>
+</head>
+
+<body>
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="fnome">Nome:</label>
+            <input type="text" id="fnome" nome="fnome"><br><br>
+            <label for="dtnasc">Data de Nascimento:</label>
+            <input type="date" id="dtnasc"><br><br>
+            <label for="sexo">Sexo:</label>
+            <input type="radio" id="feminino" name="sexo" value="Feminino">
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="masculino" name="sexo" value="Masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="naobi" name="sexo" value="Naobi">
+            <label for="Naobi">Não Binário</label>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Gerais</legend>
+            <label for="satisfacao">Satisfação:</label>
+            <label for="satisfacao">Insatisfeito</label>
+            <input type="range" list="tickmarks">
+            <datalist id="tickmarks">
+                <option value="25">
+                <option value="50">
+                <option value="75">
+                <option value="100">
+            </datalist>
+            <label for="satisfacao">Muito Satisfeito</label>
+            <br><br>
+            <label for="foto">Foto de perfil:</label>
+            <input type="file" id="foto" name="foto"><br><br>
+            <label for="prefmusical">Preferencia Musical:</label>
+            <input type="checkbox" name="rock" id="rock">
+            <label for="rock">Rock</label>
+            <input type="checkbox" name="pop" id="pop">
+            <label for="pop">Pop</label>
+            <input type="checkbox" name="eletronica" id="eletronica">
+            <label for="eletronica">Eletronica</label>
+            <input type="checkbox" name="sertanejo" id="sertanejo">
+            <label for="sertanejo">Sertanejo</label><br><br>
+            <label for="comentario">Comentario:</label><br>
+            <textarea name="comentario" id="comentario" cols="80" rows="10"></textarea>
+        </fieldset><br>
+        <input type="submit" value="enviar">
+    </form>
+</body>
+
+</html>
